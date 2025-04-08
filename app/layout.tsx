@@ -3,6 +3,7 @@ import {Inter} from "next/font/google";
 import "./globals.css";
 
 import Nav from "@/components/navigation/nav";
+import {cn} from "@/lib/utils";
 
 const interSans = Inter({
     subsets: ['cyrillic'],
@@ -23,7 +24,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body
-            className={`${interSans.variable} antialiased`}
+            className={cn('px-6 md:px-12 max-w-7xl mx-auto', `${interSans.variable}`)}
         >
         <Nav/>
         {children}
