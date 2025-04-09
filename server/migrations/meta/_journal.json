@@ -15,6 +15,13 @@
       "when": 1744037353858,
       "tag": "0001_good_sway",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1744197462821,
+      "tag": "0002_rare_ultron",
+      "breakpoints": true
     }
   ]
 }
