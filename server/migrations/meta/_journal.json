@@ -22,6 +22,34 @@
       "when": 1744197462821,
       "tag": "0002_rare_ultron",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1744632181060,
+      "tag": "0003_pretty_captain_america",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1744632250643,
+      "tag": "0004_chemical_rumiko_fujikawa",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1744633043008,
+      "tag": "0005_open_photon",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1744633917389,
+      "tag": "0006_pink_warpath",
+      "breakpoints": true
     }
   ]
 }
