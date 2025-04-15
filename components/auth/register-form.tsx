@@ -13,6 +13,8 @@ import Link from "next/link";
 import {useAction} from 'next-safe-action/hooks'
 import {cn} from "@/lib/utils";
 import {emailRegister} from "@/server/actions/email-register";
+import {FormSuccess} from "@/components/auth/form-success";
+import {FormError} from "@/components/auth/form-error";
 
 export const RegisterForm = () => {
     const [error, setError] = useState<string>("");
@@ -29,9 +31,8 @@ export const RegisterForm = () => {
 
     const {execute, status} = useAction(emailRegister, {
         onSuccess: (data) => {
-            if (data?.data?.success) {
-                console.log(data?.data?.success)
-            }
+            if (data?.data?.error) setError(data?.data?.error);
+            if (data?.data?.success) setSuccess(data?.data?.success);
         }
     })
 
@@ -93,6 +94,8 @@ export const RegisterForm = () => {
                                     </FormItem>
                                 )}
                             />
+                            <FormSuccess message={success}/>
+                            <FormError message={error}/>
                             <Button size='sm' variant='link' asChild>
                                 <Link href='auth/reset'>Forgot your password</Link>
                             </Button>
